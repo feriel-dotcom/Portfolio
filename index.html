@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerras Feriel - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KERRAS FERIEL</h1>
+        <p>Web Developer | Computer Science Student</p>
+    </header>
+
+    <nav>
+        <a href="#About me">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="About me">
+        <p>Hello, my name is Kerras Feriel.
+            Currently a computer science student, I am passionate about programming, particularly Java, as well as web development and design. Through my portfolio, I hope to share my skills and projects in these fields.
+            </p>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-logos">
+            <div><img src="logo html.png" alt="HTML"><p>HTML</p></div>
+            <div><img src="logo css.png" alt="CSS"><p>CSS</p></div>
+            <div><img src="logo js.jpg" alt="JavaScript"><p>JavaScript</p></div>
+            <div><img src="logo java.svg" alt="Java"><p>Java</p></div>
+            <div><img src="logo mysql.png" alt="MySQL"><p>MySQL</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Guess the Number Game</h3>
+            <p>A small game where you try to guess a random number.</p>
+            <button onclick="toggleDetails('project1')">See more</button>
+            <div id="project1" class="details">
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p><strong>Description:</strong> Simple interface, dynamic interactions, and limited attempts.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Calculator</h3>
+            <p>A colorful, responsive web calculator.</p>
+            <button onclick="toggleDetails('project2')">See more</button>
+            <div id="project2" class="details">
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+                <p><strong>Description:</strong> Basic calculator with custom styling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <form action="mailto:kerrasferiel26@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p>You can also reach me directly: <br>
+            Email: kerrasferiel26@gmail.com <br>
+            LinkedIn: <a href="https://www.linkedin.com" target="_blank">View my profile</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Kerras Feriel - All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
